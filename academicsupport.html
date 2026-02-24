@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>William V.S Tubman Gray High School</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body style="margin:0; font-family: Arial, sans-serif; background-color: #f0f2f5; color: #333; padding-top:100px;">
+
+<!-- Top Bar Above Header -->
+<div style="background-color:goldenrod; color:white; font-size:16px; padding:15px 20px; font-weight:bold; display:flex; align-items:center; justify-content:space-between; overflow:hidden; position:relative;">
+
+  <!-- Moving Text (Left Side) -->
+  <div style="flex:1; overflow:hidden; position:relative; height:22px;">
+      <div style="
+          white-space:nowrap;
+          position:absolute;
+          font-size:17px;
+          opacity:0.9;
+          animation: movetext 12s linear infinite;
+      ">
+         First Entrance is Next month
+      </div>
+  </div>
+
+  <!-- Static Text (Right Side – Links + Email Icon) -->
+  <div style="margin-left:20px; white-space:nowrap;">
+      <a href="programs.html" style="color:white; text-decoration:none; margin-right:12px;">Browse Our High School Programs</a> |
+      <a href="ecollege.html" style="color:white; text-decoration:none; margin:0 12px;">estudent Portal</a> |
+      <a href="support.html" style="color:white; text-decoration:none; margin:0 12px;">Support T. Gray</a> |
+      <a href="mailto:info@school.com" style="color:white; text-decoration:none; margin-left:12px;">
+          <i class="fa-solid fa-envelope"></i>
+      </a>
+  </div>
+
+</div>
+
+<!-- Animation -->
+<style>
+@keyframes movetext {
+  0% { left: 100%; }
+  100% { left: -100%; }
+}
+</style>
+
+
+
+
+<!-- HEADER -->
+<header style="background-color:#211a34; color:white; padding:12px 20px; position:sticky; top:0; z-index:9999;">
+  <div style="
+      max-width:1200px; 
+      margin:auto; 
+      display:flex; 
+      align-items:center; 
+      justify-content:space-between;
+      white-space:nowrap;
+  ">
+
+    <!-- LEFT: Logo + Name -->
+    <div style="display:flex; align-items:center; gap:10px;">
+      <img src="schoollogo.jpg" alt="T.Gray" style="height:45px;">
+      <h2 style="margin:0; font-size:18px; font-family:Georgia;">W.V.S Tubman Gray</h2>
+    </div>
+
+    <!-- RIGHT: MENU -->
+    <nav style="display:flex; align-items:center; gap:10px;">
+
+      <a href="index.html" class="menu-link">Home</a>
+
+      <div class="dropdown">
+        <a class="menu-link">Our School ▼</a>
+        <div class="dropdown-content">
+          <a href="principal message.html">Principal Message</a>
+          <a href="student affair.html">Student Affairs</a>
+           <a href="staffdirectory.html">Staff Directory</a>
+        </div>
+      </div>
+
+  <div class="dropdown">
+        <a class="menu-link">Other Program ▼</a>
+        <div class="dropdown-content">
+          <a href="job.html">Jobs</a>
+          <a href="scholarships.html">Scholarships</a>
+           <a href="academicsupport.html">Academic Supports</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <a class="menu-link">About ▼</a>
+        <div class="dropdown-content">
+          <a href="abouttheschool.html">The School</a>
+          <a href="aboutdeveloper.html">The Developer</a>
+        </div>
+      </div>
+      <a href="NewandEvents.html" class="menu-link">News & Events</a>
+      <a href="FAQ.html" class="menu-link">FAQ</a>
+      <a href="contact.html" class="menu-link">Contact</a>
+
+      <!-- LOGIN BUTTON -->
+      <a href="login.html" style="
+        background:goldenrod; 
+        color:white; 
+        padding:6px 12px; 
+        border-radius:5px; 
+        font-weight:bold;
+        text-decoration:none;
+      ">Login</a>
+
+    </nav>
+
+  </div>
+</header>
+
+<!-- STYLE -->
+<style>
+  .menu-link {
+    color: white;
+    text-decoration: none;
+    padding: 6px 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    display:inline-block;
+  }
+
+  .menu-link:hover {
+    background: #ffffff33;
+  }
+
+  /* DROPDOWN */
+  .dropdown { position: relative; display: inline-block; }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background: white;
+    min-width: 160px;
+    border-radius: 5px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 999;
+  }
+  .dropdown-content a {
+    color: #211a34;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+  }
+  .dropdown-content a:hover { background:#f0f0f0; }
+  .dropdown:hover .dropdown-content { display:block; }
+</style>
+
+
+<!-- HEADER WITH IMAGE -->
+<header style="
+  background: linear-gradient(90deg, rgba(33,26,52,0.7), rgba(67,50,127,0.7)),
+              url('academicsupport.jpg') center/cover no-repeat;
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+">
+  <h1 style="margin:0; font-size:clamp(28px,5vw,48px); font-weight:700;">Academic Support Programs</h1>
+  <p style="font-size:clamp(16px,2.5vw,20px); margin-top:10px;">Helping Students Achieve Excellence</p>
+</header>
+
+<!-- PROGRAM CARDS SECTION -->
+<section style="padding:60px 20px;">
+  <h2 style="text-align:center; font-size:clamp(24px,4vw,32px); color:#211a34; margin-bottom:50px;">Our Programs</h2>
+
+  <div style="
+    max-width:1200px; 
+    margin:auto; 
+    display:grid; 
+    grid-template-columns:repeat(auto-fit, minmax(300px, 1fr)); 
+    gap:30px;
+  ">
+
+    <!-- TUTORING CARD -->
+    <div style="
+      background:white;
+      border-radius:16px;
+      overflow:hidden;
+      box-shadow:0 10px 25px rgba(0,0,0,0.08);
+      transition: transform 0.3s, box-shadow 0.3s;
+    " onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='0 20px 40px rgba(0,0,0,0.12)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 25px rgba(0,0,0,0.08)';">
+      <div style="height:180px; background:url('tutoring.jpg') center/cover no-repeat;"></div>
+      <div style="padding:25px;">
+        <h3 style="margin:0 0 10px 0; color:#211a34;">Tutoring Program</h3>
+        <p style="color:#555; font-size:15px; line-height:1.6;">Personalized one-on-one and group tutoring sessions in core subjects to enhance learning outcomes.</p>
+        <a href="#" style="
+          display:inline-block;
+          margin-top:15px;
+          padding:12px 25px;
+          background:#211a34;
+          color:white;
+          border-radius:50px;
+          text-decoration:none;
+          font-weight:600;
+          font-size:14px;
+          transition:0.3s;
+        " onmouseover="this.style.background='#43327f'" onmouseout="this.style.background='#211a34'">Learn More</a>
+      </div>
+    </div>
+
+    <!-- MENTORSHIP CARD -->
+    <div style="
+      background:white;
+      border-radius:16px;
+      overflow:hidden;
+      box-shadow:0 10px 25px rgba(0,0,0,0.08);
+      transition: transform 0.3s, box-shadow 0.3s;
+    " onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='0 20px 40px rgba(0,0,0,0.12)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 25px rgba(0,0,0,0.08)';">
+      <div style="height:180px; background:url('mentorship.jpg') center/cover no-repeat;"></div>
+      <div style="padding:25px;">
+        <h3 style="margin:0 0 10px 0; color:#211a34;">Mentorship Program</h3>
+        <p style="color:#555; font-size:15px; line-height:1.6;">Experienced mentors guide students, providing career advice and academic support.</p>
+        <a href="#" style="
+          display:inline-block;
+          margin-top:15px;
+          padding:12px 25px;
+          background:#211a34;
+          color:white;
+          border-radius:50px;
+          text-decoration:none;
+          font-weight:600;
+          font-size:14px;
+          transition:0.3s;
+        " onmouseover="this.style.background='#43327f'" onmouseout="this.style.background='#211a34'">Learn More</a>
+      </div>
+    </div>
+
+    <!-- STUDY MATERIALS CARD -->
+    <div style="
+      background:white;
+      border-radius:16px;
+      overflow:hidden;
+      box-shadow:0 10px 25px rgba(0,0,0,0.08);
+      transition: transform 0.3s, box-shadow 0.3s;
+    " onmouseover="this.style.transform='translateY(-10px)'; this.style.boxShadow='0 20px 40px rgba(0,0,0,0.12)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 10px 25px rgba(0,0,0,0.08)';">
+      <div style="height:180px; background:url('study-materials.jpg') center/cover no-repeat;"></div>
+      <div style="padding:25px;">
+        <h3 style="margin:0 0 10px 0; color:#211a34;">Study Materials</h3>
+        <p style="color:#555; font-size:15px; line-height:1.6;">Access books, worksheets, and digital resources to support academic growth for all students.</p>
+        <a href="#" style="
+          display:inline-block;
+          margin-top:15px;
+          padding:12px 25px;
+          background:#211a34;
+          color:white;
+          border-radius:50px;
+          text-decoration:none;
+          font-weight:600;
+          font-size:14px;
+          transition:0.3s;
+        " onmouseover="this.style.background='#43327f'" onmouseout="this.style.background='#211a34'">Learn More</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer style="background:#211a34; color:white; text-align:center; padding:25px 20px; margin-top:40px;">
+  <p>© 2026 William V.S Tubman Gray High School</p>
+</footer>
+
+</body>
+</html>

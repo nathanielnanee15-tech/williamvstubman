@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>William V.S Tubman Gray High School</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<body style="margin:0; font-family: Arial, sans-serif; background-color: #f0f2f5; color: #333; padding-top:100px;">
+
+<!-- Top Bar Above Header -->
+<div style="background-color:goldenrod; color:white; font-size:16px; padding:15px 20px; font-weight:bold; display:flex; align-items:center; justify-content:space-between; overflow:hidden; position:relative;">
+
+  <!-- Moving Text (Left Side) -->
+  <div style="flex:1; overflow:hidden; position:relative; height:22px;">
+      <div style="
+          white-space:nowrap;
+          position:absolute;
+          font-size:17px;
+          opacity:0.9;
+          animation: movetext 12s linear infinite;
+      ">
+         First Entrance is Next month
+      </div>
+  </div>
+
+  <!-- Static Text (Right Side – Links + Email Icon) -->
+  <div style="margin-left:20px; white-space:nowrap;">
+      <a href="programs.html" style="color:white; text-decoration:none; margin-right:12px;">Browse Our High School Programs</a> |
+      <a href="ecollege.html" style="color:white; text-decoration:none; margin:0 12px;">estudent Portal</a> |
+      <a href="support.html" style="color:white; text-decoration:none; margin:0 12px;">Support T. Gray</a> |
+      <a href="mailto:info@school.com" style="color:white; text-decoration:none; margin-left:12px;">
+          <i class="fa-solid fa-envelope"></i>
+      </a>
+  </div>
+
+</div>
+
+<!-- Animation -->
+<style>
+@keyframes movetext {
+  0% { left: 100%; }
+  100% { left: -100%; }
+}
+</style>
+
+
+
+
+<!-- HEADER -->
+<header style="background-color:#211a34; color:white; padding:12px 20px; position:sticky; top:0; z-index:9999;">
+  <div style="
+      max-width:1200px; 
+      margin:auto; 
+      display:flex; 
+      align-items:center; 
+      justify-content:space-between;
+      white-space:nowrap;
+  ">
+
+    <!-- LEFT: Logo + Name -->
+    <div style="display:flex; align-items:center; gap:10px;">
+      <img src="schoollogo.jpg" alt="T.Gray" style="height:45px;">
+      <h2 style="margin:0; font-size:18px; font-family:Georgia;">W.V.S Tubman Gray</h2>
+    </div>
+
+    <!-- RIGHT: MENU -->
+    <nav style="display:flex; align-items:center; gap:10px;">
+
+      <a href="index.html" class="menu-link">Home</a>
+
+      <div class="dropdown">
+        <a class="menu-link">Our School ▼</a>
+        <div class="dropdown-content">
+          <a href="principal message.html">Principal Message</a>
+          <a href="student affair.html">Student Affairs</a>
+           <a href="staffdirectory.html">Staff Directory</a>
+        </div>
+      </div>
+
+   <div class="dropdown">
+        <a class="menu-link">Other Program ▼</a>
+        <div class="dropdown-content">
+          <a href="job.html">Jobs</a>
+          <a href="scholarships.html">Scholarships</a>
+           <a href="academicsupport.html">Academic Supports</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <a class="menu-link">About ▼</a>
+        <div class="dropdown-content">
+          <a href="abouttheschool.html">The School</a>
+          <a href="aboutdeveloper.html">The Developer</a>
+        </div>
+      </div>
+      <a href="NewandEvents.html" class="menu-link">News & Events</a>
+      <a href="FAQ.html" class="menu-link">FAQ</a>
+      <a href="contact.html" class="menu-link">Contact</a>
+
+      <!-- LOGIN BUTTON -->
+      <a href="login.html" style="
+        background:goldenrod; 
+        color:white; 
+        padding:6px 12px; 
+        border-radius:5px; 
+        font-weight:bold;
+        text-decoration:none;
+      ">Login</a>
+
+    </nav>
+
+  </div>
+</header>
+
+<!-- STYLE -->
+<style>
+  .menu-link {
+    color: white;
+    text-decoration: none;
+    padding: 6px 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    display:inline-block;
+  }
+
+  .menu-link:hover {
+    background: #ffffff33;
+  }
+
+  /* DROPDOWN */
+  .dropdown { position: relative; display: inline-block; }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background: white;
+    min-width: 160px;
+    border-radius: 5px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 999;
+  }
+  .dropdown-content a {
+    color: #211a34;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+  }
+  .dropdown-content a:hover { background:#f0f0f0; }
+  .dropdown:hover .dropdown-content { display:block; }
+</style>
+
+
+<!-- ================= STAFF SEARCH ================= -->
+<section style="padding:40px 20px; background:#ffffff; text-align:center;">
+  
+  <h2 style="font-size:28px; color:#211a34; margin-bottom:20px;">
+    Search Staff
+  </h2>
+
+  <input type="text" id="staffSearch" placeholder="Search by name, position, or email..."
+    style="
+      width:60%;
+      max-width:500px;
+      padding:12px 15px;
+      border-radius:30px;
+      border:1px solid #ccc;
+      font-size:16px;
+      outline:none;
+      box-shadow:0 3px 8px rgba(0,0,0,0.1);
+    ">
+</section>
+
+
+<!-- ================= ADMINISTRATIVE STAFF ================= -->
+<section style="
+  padding:50px 20px;
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+              url('background 3.jpg') center/cover no-repeat;
+">
+
+  <h2 style="text-align:center; font-size:30px; margin-bottom:40px; color:white;">
+    ADMINISTRAPTIVE STAFF
+  </h2>
+
+  <div style="
+    max-width:1200px; 
+    margin:auto; 
+    display:grid; 
+    grid-template-columns:repeat(auto-fit, minmax(250px, 1fr)); 
+    gap:30px;
+  ">
+
+    <div class="staff-card" style="background:white; padding:20px; border-radius:12px; text-align:center; box-shadow:0 4px 10px rgba(0,0,0,0.3);">
+  
+  <img src="principal pictures staff  directory.jpg" style="width:120px; height:120px; border-radius:50%; object-fit:cover;">
+  
+  <h3 style="margin-bottom:5px;">Mr. Debester Kpoquayan Jr.</h3>
+  <p style="color:goldenrod; font-weight:bold;">Principal</p>
+  <p>Email: Mr.Debesterpoquayan Jr.com</p>
+  <!-- READ MORE LINK -->
+  <p style="margin:5px 0;">
+   <span onclick="toggleInfo(this)" 
+  style="
+    display:inline-block;
+    padding:6px 14px;
+    background:#211a34;
+    color:white;
+    border-radius:20px;
+    font-size:13px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+  "
+  onmouseover="this.style.background='goldenrod'"
+  onmouseout="this.style.background='#211a34'"
+>
+  Read More
+</span>
+  </p>
+                          <!-- HIDDEN INFO -->
+  <div class="more-info" style="display:none; margin-top:10px; font-size:14px; color:#555;">
+    Mr. Debester Kpoquayan Jr. has over 15 years of experience in educational leadership. 
+    He is committed to academic excellence and student development.
+  </div>
+</div>
+
+     <div class="staff-card" style="background:white; padding:20px; border-radius:12px; text-align:center; box-shadow:0 4px 10px rgba(0,0,0,0.3);">
+  
+  <img src="vice principal.jpg" style="width:120px; height:120px; border-radius:50%; object-fit:cover;">
+  
+  <h3 style="margin-bottom:5px;">Mr. Isaac G. Kangar</h3>
+  <p style="color:goldenrod; font-weight:bold;">Vice Principal for Administration</p>
+  <p>Email: isaacgkangar@school.com</p>
+  <!-- READ MORE LINK -->
+  <p style="margin:5px 0;">
+    <span onclick="toggleInfo(this)" 
+  style="
+    display:inline-block;
+    padding:6px 14px;
+    background:#211a34;
+    color:white;
+    border-radius:20px;
+    font-size:13px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+  "
+  onmouseover="this.style.background='goldenrod'"
+  onmouseout="this.style.background='#211a34'"
+>
+  Read More
+</span>
+  </p>
+                          <!-- HIDDEN INFO -->
+  <div class="more-info" style="display:none; margin-top:10px; font-size:14px; color:#555;">
+    Mr. Isaac G. Kangar has over 15 years of experience in educational leadership. 
+    He is committed to academic excellence and student development.
+  </div>
+</div>
+
+     <div class="staff-card" style="background:white; padding:20px; border-radius:12px; text-align:center; box-shadow:0 4px 10px rgba(0,0,0,0.3);">
+  
+  <img src="instruction.jpg" style="width:120px; height:120px; border-radius:50%; object-fit:cover;">
+  
+  <h3 style="margin-bottom:5px;">Rev. Harris Cooper</h3>
+  <p style="color:goldenrod; font-weight:bold;">Vice Principal for Instruction</p>
+  <p>Email: harriscooper@school.com</p>
+  <!-- READ MORE LINK -->
+  <p style="margin:5px 0;">
+    <span onclick="toggleInfo(this)" 
+  style="
+    display:inline-block;
+    padding:6px 14px;
+    background:#211a34;
+    color:white;
+    border-radius:20px;
+    font-size:13px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+  "
+  onmouseover="this.style.background='goldenrod'"
+  onmouseout="this.style.background='#211a34'"
+>
+  Read More
+</span>
+  </p>
+                          <!-- HIDDEN INFO -->
+  <div class="more-info" style="display:none; margin-top:10px; font-size:14px; color:#555;">
+   Mr. Cooper has over 15 years of experience in educational leadership. 
+    He is committed to academic excellence and student development.
+  </div>
+</div>
+
+     <div class="staff-card" style="background:white; padding:20px; border-radius:12px; text-align:center; box-shadow:0 4px 10px rgba(0,0,0,0.3);">
+  
+  <img src="dean.jpg" style="width:120px; height:120px; border-radius:50%; object-fit:cover;">
+  
+  <h3 style="margin-bottom:5px;">Nathaniel Nanee</h3>
+  <p style="color:goldenrod; font-weight:bold;">Dean of Students Affiar</p>
+  <p>Email: nathannielnanee15@school.com</p>
+  <!-- READ MORE LINK -->
+  <p style="margin:5px 0;">
+   <span onclick="toggleInfo(this)" 
+  style="
+    display:inline-block;
+    padding:6px 14px;
+    background:#211a34;
+    color:white;
+    border-radius:20px;
+    font-size:13px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+  "
+  onmouseover="this.style.background='goldenrod'"
+  onmouseout="this.style.background='#211a34'"
+>
+  Read More
+</span>
+  </p>
+                          <!-- HIDDEN INFO -->
+  <div class="more-info" style="display:none; margin-top:10px; font-size:14px; color:#555;">
+    Nanee has over 15 years of experience in educational leadership. 
+    He is committed to academic excellence and student development.
+  </div>
+</div>
+
+<div class="staff-card" style="background:white; padding:20px; border-radius:12px; text-align:center; box-shadow:0 4px 10px rgba(0,0,0,0.3);">
+  
+  <img src="business.jpg" style="width:120px; height:120px; border-radius:50%; object-fit:cover;">
+  
+  <h3 style="margin-bottom:5px;">Mr. Daniel Dorbor</h3>
+  <p style="color:goldenrod; font-weight:bold;">Business Manager</p>
+  <p>Email: dorbor@school.com</p>
+  <!-- READ MORE LINK -->
+  <p style="margin:5px 0;">
+   <span onclick="toggleInfo(this)" 
+  style="
+    display:inline-block;
+    padding:6px 14px;
+    background:#211a34;
+    color:white;
+    border-radius:20px;
+    font-size:13px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+  "
+  onmouseover="this.style.background='goldenrod'"
+  onmouseout="this.style.background='#211a34'"
+>
+  Read More
+</span>
+  </p>
+                          <!-- HIDDEN INFO -->
+  <div class="more-info" style="display:none; margin-top:10px; font-size:14px; color:#555;">
+    Mr. John Doe has over 15 years of experience in educational leadership. 
+    He is committed to academic excellence and student development.
+  </div>
+</div>
+</section>
+
+</section>
+
+ 
+
+<!-- ================= TEACHING STAFF ================= -->
+<section style="padding:50px 20px; background:#f9fafc;">
+  <h2 style="text-align:center; font-size:30px; margin-bottom:40px; color:#211a34;">
+    TEACHING STAFF
+  </h2>
+
+  <div style="max-width:1200px; margin:auto; display:grid; grid-template-columns:repeat(auto-fit, minmax(250px, 1fr)); gap:30px;">
+
+ <div class="staff-card" style="background:white; padding:20px; border-radius:12px; text-align:center; box-shadow:0 4px 10px rgba(0,0,0,0.3);">
+  
+  <img src="principal.jpg" style="width:120px; height:120px; border-radius:50%; object-fit:cover;">
+  
+  <h3 style="margin-bottom:5px;">Mr. John Doe</h3>
+  <p style="color:goldenrod; font-weight:bold;">Principal</p>
+  <p>Email: principal@school.com</p>
+  <!-- READ MORE LINK -->
+  <p style="margin:5px 0;">
+   <span onclick="toggleInfo(this)" 
+  style="
+    display:inline-block;
+    padding:6px 14px;
+    background:#211a34;
+    color:white;
+    border-radius:20px;
+    font-size:13px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+  "
+  onmouseover="this.style.background='goldenrod'"
+  onmouseout="this.style.background='#211a34'"
+>
+  Read More
+</span>
+  </p>
+                          <!-- HIDDEN INFO -->
+  <div class="more-info" style="display:none; margin-top:10px; font-size:14px; color:#555;">
+    Mr. John Doe has over 15 years of experience in educational leadership. 
+    He is committed to academic excellence and student development.
+  </div>
+</div>
+
+ <div class="staff-card" style="background:white; padding:20px; border-radius:12px; text-align:center; box-shadow:0 4px 10px rgba(0,0,0,0.3);">
+  
+  <img src="principal.jpg" style="width:120px; height:120px; border-radius:50%; object-fit:cover;">
+  
+  <h3 style="margin-bottom:5px;">Mr. John Doe</h3>
+  <p style="color:goldenrod; font-weight:bold;">Principal</p>
+  <p>Email: principal@school.com</p>
+  <!-- READ MORE LINK -->
+  <p style="margin:5px 0;">
+    <span onclick="toggleInfo(this)" 
+  style="
+    display:inline-block;
+    padding:6px 14px;
+    background:#211a34;
+    color:white;
+    border-radius:20px;
+    font-size:13px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+  "
+  onmouseover="this.style.background='goldenrod'"
+  onmouseout="this.style.background='#211a34'"
+>
+  Read More
+</span>
+  </p>
+                          <!-- HIDDEN INFO -->
+  <div class="more-info" style="display:none; margin-top:10px; font-size:14px; color:#555;">
+    Mr. John Doe has over 15 years of experience in educational leadership. 
+    He is committed to academic excellence and student development.
+  </div>
+</div>
+
+ <div class="staff-card" style="background:white; padding:20px; border-radius:12px; text-align:center; box-shadow:0 4px 10px rgba(0,0,0,0.3);">
+  
+  <img src="principal.jpg" style="width:120px; height:120px; border-radius:50%; object-fit:cover;">
+  
+  <h3 style="margin-bottom:5px;">Mr. John Doe</h3>
+  <p style="color:goldenrod; font-weight:bold;">Principal</p>
+  <p>Email: principal@school.com</p>
+  <!-- READ MORE LINK -->
+  <p style="margin:5px 0;">
+   <span onclick="toggleInfo(this)" 
+  style="
+    display:inline-block;
+    padding:6px 14px;
+    background:#211a34;
+    color:white;
+    border-radius:20px;
+    font-size:13px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+  "
+  onmouseover="this.style.background='goldenrod'"
+  onmouseout="this.style.background='#211a34'"
+>
+  Read More
+</span>
+  </p>
+                          <!-- HIDDEN INFO -->
+  <div class="more-info" style="display:none; margin-top:10px; font-size:14px; color:#555;">
+    Mr. John Doe has over 15 years of experience in educational leadership. 
+    He is committed to academic excellence and student development.
+  </div>
+</div>
+</section>
+
+
+<!-- ================= SUPPORT STAFF ================= -->
+<section style="
+  padding:50px 20px;
+  background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
+              url('background 5.jpg') center/cover no-repeat;
+">
+
+  <h2 style="text-align:center; font-size:30px; margin-bottom:40px; color:white;">
+    SUPPORT STAFF
+  </h2>
+
+  <div style="
+    max-width:1200px; 
+    margin:auto; 
+    display:grid; 
+    grid-template-columns:repeat(auto-fit, minmax(250px, 1fr)); 
+    gap:30px;
+  ">
+
+    <div class="staff-card" style="background:white; padding:20px; border-radius:12px; text-align:center; box-shadow:0 4px 10px rgba(0,0,0,0.3);">
+  
+  <img src="principal.jpg" style="width:120px; height:120px; border-radius:50%; object-fit:cover;">
+  
+  <h3 style="margin-bottom:5px;">Mr. John Doe</h3>
+  <p style="color:goldenrod; font-weight:bold;">Principal</p>
+  <p>Email: principal@school.com</p>
+  <!-- READ MORE LINK -->
+  <p style="margin:5px 0;">
+   <span onclick="toggleInfo(this)" 
+  style="
+    display:inline-block;
+    padding:6px 14px;
+    background:#211a34;
+    color:white;
+    border-radius:20px;
+    font-size:13px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+  "
+  onmouseover="this.style.background='goldenrod'"
+  onmouseout="this.style.background='#211a34'"
+>
+  Read More
+</span>
+  </p>
+                          <!-- HIDDEN INFO -->
+  <div class="more-info" style="display:none; margin-top:10px; font-size:14px; color:#555;">
+    Mr. John Doe has over 15 years of experience in educational leadership. 
+    He is committed to academic excellence and student development.
+  </div>
+</div>
+
+     <div class="staff-card" style="background:white; padding:20px; border-radius:12px; text-align:center; box-shadow:0 4px 10px rgba(0,0,0,0.3);">
+  
+  <img src="principal.jpg" style="width:120px; height:120px; border-radius:50%; object-fit:cover;">
+  
+  <h3 style="margin-bottom:5px;">Mr. John Doe</h3>
+  <p style="color:goldenrod; font-weight:bold;">Principal</p>
+  <p>Email: principal@school.com</p>
+  <!-- READ MORE LINK -->
+  <p style="margin:5px 0;">
+   <span onclick="toggleInfo(this)" 
+  style="
+    display:inline-block;
+    padding:6px 14px;
+    background:#211a34;
+    color:white;
+    border-radius:20px;
+    font-size:13px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+  "
+  onmouseover="this.style.background='goldenrod'"
+  onmouseout="this.style.background='#211a34'"
+>
+  Read More
+</span>
+  </p>
+                          <!-- HIDDEN INFO -->
+  <div class="more-info" style="display:none; margin-top:10px; font-size:14px; color:#555;">
+    Mr. John Doe has over 15 years of experience in educational leadership. 
+    He is committed to academic excellence and student development.
+  </div>
+</div>
+
+     <div class="staff-card" style="background:white; padding:20px; border-radius:12px; text-align:center; box-shadow:0 4px 10px rgba(0,0,0,0.3);">
+  
+  <img src="principal.jpg" style="width:120px; height:120px; border-radius:50%; object-fit:cover;">
+  
+  <h3 style="margin-bottom:5px;">Mr. John Doe</h3>
+  <p style="color:goldenrod; font-weight:bold;">Principal</p>
+  <p>Email: principal@school.com</p>
+  <!-- READ MORE LINK -->
+  <p style="margin:5px 0;">
+   <span onclick="toggleInfo(this)" 
+  style="
+    display:inline-block; padding:6px 14px; background:#211a34; color:white; border-radius:20px;font-size:13px;font-weight:bold; cursor:pointer; transition:0.3s;
+  "
+  onmouseover="this.style.background='goldenrod'"
+  onmouseout="this.style.background='#211a34'"
+>
+  Read More
+</span>
+  </p>
+                          <!-- HIDDEN INFO -->
+  <div class="more-info" style="display:none; margin-top:10px; font-size:14px; color:#555;">
+    Mr. John Doe has over 15 years of experience in educational leadership. 
+    He is committed to academic excellence and student development.
+  </div>
+</div>
+
+     <div class="staff-card" style="background:white; padding:20px; border-radius:12px; text-align:center; box-shadow:0 4px 10px rgba(0,0,0,0.3);">
+  
+  <img src="principal.jpg" style="width:120px; height:120px; border-radius:50%; object-fit:cover;">
+  
+  <h3 style="margin-bottom:5px;">Mr. John Doe</h3>
+  <p style="color:goldenrod; font-weight:bold;">Principal</p>
+  <p>Email: principal@school.com</p>
+  <!-- READ MORE LINK -->
+  <p style="margin:5px 0;">
+    <span onclick="toggleInfo(this)" 
+  style="
+    display:inline-block;
+    padding:6px 14px;
+    background:#211a34;
+    color:white;
+    border-radius:20px;
+    font-size:13px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+  "
+  onmouseover="this.style.background='goldenrod'"
+  onmouseout="this.style.background='#211a34'"
+>
+  Read More
+</span>
+  </p>
+                          <!-- HIDDEN INFO -->
+  <div class="more-info" style="display:none; margin-top:10px; font-size:14px; color:#555;">
+    Mr. John Doe has over 15 years of experience in educational leadership. 
+    He is committed to academic excellence and student development.
+  </div>
+</div>
+</section>
+
+<script>
+document.getElementById("staffSearch").addEventListener("keyup", function() {
+  let filter = this.value.toLowerCase();
+  let cards = document.querySelectorAll(".staff-card");
+
+  cards.forEach(function(card) {
+    let text = card.innerText.toLowerCase();
+    if (text.includes(filter)) {
+      card.style.display = "block";
+    } else {
+      card.style.display = "none";
+    }
+  });
+});
+</script>
+
+<script>
+function toggleInfo(element) {
+
+  let info = element.parentElement.parentElement.querySelector(".more-info");
+
+  // If already open → close it
+  if (info.style.display === "block") {
+    info.style.display = "none";
+    element.innerText = "Read More";
+    return;
+  }
+
+  // Otherwise close all first (accordion behavior)
+  let allInfo = document.querySelectorAll(".more-info");
+  let allButtons = document.querySelectorAll(".staff-card span");
+
+  allInfo.forEach(function(i){
+    i.style.display = "none";
+  });
+
+  allButtons.forEach(function(btn){
+    btn.innerText = "Read More";
+  });
+
+  // Then open the clicked one
+  info.style.display = "block";
+  element.innerText = "Read Less";
+}
+</script>
+</body>
+
+  <!-- Footer -->
+    <footer id="contact" style="background-color:#211a34; color:white; padding:20px 50px; text-align:center; margin-top:50px;">
+        <p>Contact us: nathannielnanee15@gmail.com | +231 777 115 844</p>
+        <p> 2025 William V.S Tubman Gray High School. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
+
+

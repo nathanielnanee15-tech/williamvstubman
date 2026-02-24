@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>William V.S Tubman Gray High School</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body style="margin:0; font-family: Arial, sans-serif; background-color: #f0f2f5; color: #333; padding-top:100px;">
+
+<!-- Top Bar Above Header -->
+<div style="background-color:goldenrod; color:white; font-size:16px; padding:15px 20px; font-weight:bold; display:flex; align-items:center; justify-content:space-between; overflow:hidden; position:relative;">
+
+  <!-- Moving Text (Left Side) -->
+  <div style="flex:1; overflow:hidden; position:relative; height:22px;">
+      <div style="
+          white-space:nowrap;
+          position:absolute;
+          font-size:17px;
+          opacity:0.9;
+          animation: movetext 12s linear infinite;
+      ">
+         First Entrance is Next month
+      </div>
+  </div>
+
+  <!-- Static Text (Right Side – Links + Email Icon) -->
+  <div style="margin-left:20px; white-space:nowrap;">
+      <a href="programs.html" style="color:white; text-decoration:none; margin-right:12px;">Browse Our High School Programs</a> |
+      <a href="ecollege.html" style="color:white; text-decoration:none; margin:0 12px;">estudent Portal</a> |
+      <a href="support.html" style="color:white; text-decoration:none; margin:0 12px;">Support T. Gray</a> |
+      <a href="mailto:info@school.com" style="color:white; text-decoration:none; margin-left:12px;">
+          <i class="fa-solid fa-envelope"></i>
+      </a>
+  </div>
+
+</div>
+
+<!-- Animation -->
+<style>
+@keyframes movetext {
+  0% { left: 100%; }
+  100% { left: -100%; }
+}
+</style>
+
+
+
+
+<!-- HEADER -->
+<header style="background-color:#211a34; color:white; padding:12px 20px; position:sticky; top:0; z-index:9999;">
+  <div style="
+      max-width:1200px; 
+      margin:auto; 
+      display:flex; 
+      align-items:center; 
+      justify-content:space-between;
+      white-space:nowrap;
+  ">
+
+    <!-- LEFT: Logo + Name -->
+    <div style="display:flex; align-items:center; gap:10px;">
+      <img src="schoollogo.jpg" alt="T.Gray" style="height:45px;">
+      <h2 style="margin:0; font-size:18px; font-family:Georgia;">W.V.S Tubman Gray</h2>
+    </div>
+
+    <!-- RIGHT: MENU -->
+    <nav style="display:flex; align-items:center; gap:10px;">
+
+      <a href="index.html" class="menu-link">Home</a>
+
+      <div class="dropdown">
+        <a class="menu-link">Our School ▼</a>
+        <div class="dropdown-content">
+          <a href="principal message.html">Principal Message</a>
+          <a href="student affair.html">Student Affairs</a>
+           <a href="staffdirectory.html">Staff Directory</a>
+        </div>
+      </div>
+
+   <div class="dropdown">
+        <a class="menu-link">Other Program ▼</a>
+        <div class="dropdown-content">
+          <a href="job.html">Jobs</a>
+          <a href="scholarships.html">Scholarships</a>
+           <a href="academicsupport.html">Academic Supports</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <a class="menu-link">About ▼</a>
+        <div class="dropdown-content">
+          <a href="abouttheschool.html">The School</a>
+          <a href="aboutdeveloper.html">The Developer</a>
+        </div>
+      </div>
+      <a href="NewandEvents.html" class="menu-link">News & Events</a>
+      <a href="FAQ.html" class="menu-link">FAQ</a>
+      <a href="contact.html" class="menu-link">Contact</a>
+
+      <!-- LOGIN BUTTON -->
+      <a href="login.html" style="
+        background:goldenrod; 
+        color:white; 
+        padding:6px 12px; 
+        border-radius:5px; 
+        font-weight:bold;
+        text-decoration:none;
+      ">Login</a>
+
+    </nav>
+
+  </div>
+</header>
+
+<!-- STYLE -->
+<style>
+  .menu-link {
+    color: white;
+    text-decoration: none;
+    padding: 6px 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    display:inline-block;
+  }
+
+  .menu-link:hover {
+    background: #ffffff33;
+  }
+
+  /* DROPDOWN */
+  .dropdown { position: relative; display: inline-block; }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background: white;
+    min-width: 160px;
+    border-radius: 5px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 999;
+  }
+  .dropdown-content a {
+    color: #211a34;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+  }
+  .dropdown-content a:hover { background:#f0f0f0; }
+  .dropdown:hover .dropdown-content { display:block; }
+</style>
+
+<!-- HEADER WITH BACKGROUND IMAGE -->
+<header style="
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), 
+              url('job.jpg') center/cover no-repeat;
+  color: white;
+  padding: 50px 20px;
+  text-align: center;
+">
+  <h1 style="margin:0; font-size:clamp(22px, 5vw, 36px);">
+    Job Opportunities
+  </h1>
+</header>
+<!-- HERO -->
+<section style="
+  background: linear-gradient(white, goldenrod),
+              url('job.jpg') center/cover no-repeat;
+  color:white;
+  padding:50px 20px;
+  text-align:center;
+">
+  <h2 style="margin:0; font-size:clamp(20px, 4vw, 32px);">Join Our Team</h2>
+  <p style="font-size:16px; max-width:600px; margin:15px auto 0;">Explore the latest job opportunities at William V.S Tubman Gray High School. Be part of a professional team dedicated to student success.</p>
+</section>
+
+<!-- JOB LISTING CARDS -->
+<section style="padding:50px 20px;">
+  <div style="max-width:1200px; margin:auto; display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:30px;">
+
+    <!-- JOB CARD -->
+    <div style="background:white; padding:20px; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.1); transition: transform 0.3s; cursor:pointer;" 
+         onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
+      <h3 style="margin-top:0; color:#211a34;">Science Teacher</h3>
+      <p style="font-size:14px; color:#555;">We are seeking a passionate Science Teacher to inspire and educate students from grades 9-12.</p>
+      <p style="font-weight:bold; color:goldenrod; margin:10px 0;">Deadline: March 10, 2026</p>
+      <a href="apply-science.html" style="text-decoration:none; background:#211a34; color:white; padding:10px 20px; border-radius:6px; font-size:14px;">Apply Now</a>
+    </div>
+
+    <div style="background:white; padding:20px; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.1); transition: transform 0.3s; cursor:pointer;" 
+         onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
+      <h3 style="margin-top:0; color:#211a34;">Mathematics Teacher</h3>
+      <p style="font-size:14px; color:#555;">Looking for a skilled Mathematics Teacher to lead high school math classes and mentor students.</p>
+      <p style="font-weight:bold; color:goldenrod; margin:10px 0;">Deadline: March 15, 2026</p>
+      <a href="apply-math.html" style="text-decoration:none; background:#211a34; color:white; padding:10px 20px; border-radius:6px; font-size:14px;">Apply Now</a>
+    </div>
+
+    <div style="background:white; padding:20px; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.1); transition: transform 0.3s; cursor:pointer;" 
+         onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
+      <h3 style="margin-top:0; color:#211a34;">ICT Instructor</h3>
+      <p style="font-size:14px; color:#555;">We want an ICT Instructor to teach technology skills and help students excel in modern IT skills.</p>
+      <p style="font-weight:bold; color:goldenrod; margin:10px 0;">Deadline: March 20, 2026</p>
+      <a href="apply-ict.html" style="text-decoration:none; background:#211a34; color:white; padding:10px 20px; border-radius:6px; font-size:14px;">Apply Now</a>
+    </div>
+
+    <div style="background:white; padding:20px; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.1); transition: transform 0.3s; cursor:pointer;" 
+         onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='translateY(0)'">
+      <h3 style="margin-top:0; color:#211a34;">ICT Instructor</h3>
+      <p style="font-size:14px; color:#555;">We want an ICT Instructor to teach technology skills and help students excel in modern IT skills.</p>
+      <p style="font-weight:bold; color:goldenrod; margin:10px 0;">Deadline: March 20, 2026</p>
+      <a href="apply-ict.html" style="text-decoration:none; background:#211a34; color:white; padding:10px 20px; border-radius:6px; font-size:14px;">Apply Now</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer style="background:#211a34; color:white; padding:20px; text-align:center;">
+  <p>© 2026 William V.S Tubman Gray High School</p>
+</footer>
+
+</body>
+</html>
